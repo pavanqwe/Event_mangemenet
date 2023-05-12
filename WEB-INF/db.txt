@@ -1,0 +1,18 @@
+create database eventmanagement;
+use eventmanagement;
+
+create table event_details(event_id varchar(50) primary key,
+event_name varchar(50),
+start_date date,
+end_date date,
+location varchar(50),
+total_cost double);
+
+create table location_details(event_name varchar(50),
+location_name varchar(50),
+address varchar(50),
+manager_name varchar(20),
+manager_number varchar(15),
+peoples_capacities varchar(50),
+facilities varchar(250));
+
